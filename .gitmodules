@@ -1,0 +1,3 @@
+[submodule "acl-anthology"]
+	path = acl-anthology
+	url = git@github.com:acl-org/acl-anthology.git
