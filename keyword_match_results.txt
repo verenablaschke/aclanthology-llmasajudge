@@ -1,0 +1,264 @@
+
+=== PROCESSING: acl-anthology/data/xml/2025.acl.xml ===
+
+=== HIT ===
+FILE: acl-anthology/data/xml/2025.acl.xml
+TITLE: SwiLTra-Bench: The Swiss Legal Translation Benchmark
+Matched Keywords:
+  - LLM: LLM
+  - Judge: judge
+  - LR: multilingual
+ABSTRACT: In Switzerland legal translation is uniquely important due to the country’s four official languages and requirements for multilingual legal documentation. However, this process traditionally relies on professionals who must be both legal experts and skilled translators—creating bottlenecks and impacting effective access to justice. To address this challenge, we introduce SwiLTra-Bench, a comprehensive multilingual benchmark of over 180K aligned Swiss legal translation pairs comprising laws, headnotes, and press releases across all Swiss languages along with English, designed to evaluate LLM-based translation systems. Our systematic evaluation reveals that frontier models achieve superior translation performance across all document types, while specialized translation systems excel specifically in laws but under-perform in headnotes. Through rigorous testing and human expert validation, we demonstrate that while fine-tuning open SLMs significantly improves their translation quality, they still lag behind the best zero-shot prompted frontier models such as Claude-3.5-Sonnet. Additionally, we present SwiLTra-Judge, a specialized LLM evaluation system that aligns best with human expert assessments.
+
+
+=== HIT ===
+FILE: acl-anthology/data/xml/2025.acl.xml
+TITLE: MEMERAG: A Multilingual End-to-End Meta-Evaluation Benchmark for Retrieval Augmented Generation
+Matched Keywords:
+  - LLM: LLM, large language model
+  - Judge: judge, evaluator, LLM-as-a-judge, automatic evaluators
+  - LR: multilingual
+ABSTRACT: Automatic evaluation of retrieval augmented generation (RAG) systems relies on fine-grained dimensions like faithfulness and relevance, as judged by expert human annotators. Meta-evaluation benchmarks support the development of automatic evaluators that correlate well with human judgement. However, existing benchmarks predominantly focus on English or use translated data, which fails to capture cultural nuances. A native approach provides a better representation of the end user experience.In this work, we develop a Multilingual End-to-end Meta-Evaluation RAG benchmark MEMERAG. Our benchmark builds on the popular MIRACL dataset, using native-language questions and generating responses with diverse large language models (LLMs), which are then assessed by expert annotators for faithfulness and relevance. We describe our annotation process and show that it achieves high inter-annotator agreement. We then analyse the performance of the answer-generating LLMs across languages as per the human evaluators. Finally we apply the dataset to our main use-case which is to benchmark multilingual automatic evaluators (LLM-as-a-judge). We show that our benchmark can reliably identify improvements offered by advanced prompting techniques and LLMs. We release our benchmark to support the community developing accurate evaluation methods for multilingual RAG systems.
+
+
+=== HIT ===
+FILE: acl-anthology/data/xml/2025.acl.xml
+TITLE: Cross-Lingual Auto Evaluation for Assessing Multilingual LLMs
+Matched Keywords:
+  - LLM: LLM
+  - Judge: evaluator, LLM-based evaluations
+  - LR: low resource, multilingual
+ABSTRACT: Evaluating machine-generated text remains a significant challenge in NLP, especially for non-English languages. Current methodologies, including automated metrics, human assessments, and LLM-based evaluations, predominantly focus on English, revealing a significant gap in multilingual evaluation frameworks. We introduce the Cross Lingual Auto Evaluation (CIA) Suite, an extensible framework that includes evaluator LLMs (Hercule) and a novel test set (Recon) specifically designed for multilingual evaluation. Our test set features 500 human-annotated instructions spanning various task capabilities along with human judgment scores across six languages. This would enable benchmarking of general-purpose multilingual LLMs and facilitate meta-evaluation of Evaluator LLMs. The proposed model, Hercule, is a cross-lingual evaluation model that addresses the scarcity of reference answers in the target language by learning to assign scores to responses based on easily available reference answers in English. Our experiments demonstrate that Hercule aligns more closely with human judgments compared to proprietary models, demonstrating the effectiveness of such cross-lingual evaluation in low resource scenarios. Further, it is also effective in zero-shot evaluation on unseen languages. This study is the first comprehensive examination of cross-lingual evaluation using LLMs, presenting a scalable and effective approach for multilingual assessment. All code, datasets, and models will be publicly available to enable further research in this important area.
+
+
+=== PROCESSING: acl-anthology/data/xml/2025.emnlp.xml ===
+
+=== HIT ===
+FILE: acl-anthology/data/xml/2025.emnlp.xml
+TITLE: A Multilingual, Culture-First Approach to Addressing Misgendering in LLM Applications
+Matched Keywords:
+  - LLM: LLM
+  - Judge: judge
+  - LR: multilingual
+ABSTRACT: Misgendering is the act of referring to someone by a gender that does not match their chosen identity. It marginalizes and undermines a person’s sense of self, causing significant harm. English-based approaches have clear-cut approaches to avoiding misgendering, such as the use of the pronoun “they”. However, other languages pose unique challenges due to both grammatical and cultural constructs. In this work we develop methodologies to assess and mitigate misgendering across 42 languages and dialects using a participatory-design approach to design effective and appropriate guardrails across all languages. We test these guardrails in a standard LLM-based application (meeting transcript summarization), where both the data generation and the annotation steps followed a human-in-the-loop approach. We find that the proposed guardrails are very effective in reducing misgendering rates across all languages in the summaries generated, and without incurring loss of quality. Our human-in-the-loop approach demonstrates a method to feasibly scale inclusive and responsible AI-based solutions across multiple languages and cultures. We release the guardrails and synthetic dataset encompassing 42 languages, along with human and LLM-judge evaluations, to encourage further research on this subject.
+
+
+=== HIT ===
+FILE: acl-anthology/data/xml/2025.emnlp.xml
+TITLE: Dr. Copilot: A Multi-Agent Prompt Optimized Assistant for Improving Patient-Doctor Communication in Romanian
+Matched Keywords:
+  - LLM: LLM, large language model
+  - Judge: judge
+  - LR: low-resource
+ABSTRACT: Text-based telemedicine has become increasingly common, yet the quality of medical advice in doctor-patient interactions is often judged more on how advice is communicated rather than its clinical accuracy. To address this, we introduce Dr.Copilot, a multi-agent large language model (LLM) system that supports Romanian-speaking doctors by evaluating and enhancing the presentation quality of their written responses. Rather than assessing medical correctness, Dr.Copilot provides feedback along 17 interpretable quality measures. The system comprises of three LLM agents with prompts automatically optimized via DSPy. Designed with low-resource Romanian data and deployed using open-weight models, it delivers real-time specific feedback to doctors within a telemedicine platform. Empirical evaluations and live deployment with 41 doctors show measurable improvements in user reviews and response quality, marking one of the first real-world deployments of LLMs in Romanian medical settings.
+
+
+=== PROCESSING: acl-anthology/data/xml/2025.coling.xml ===
+
+=== HIT ===
+FILE: acl-anthology/data/xml/2025.coling.xml
+TITLE: MQM-APE: Toward High-Quality Error Annotation Predictors with Automatic Post-Editing in LLM Translation Evaluators
+Matched Keywords:
+  - LLM: LLM, large language model
+  - Judge: judge, evaluator
+  - LR: low-resource
+ABSTRACT: Large Language Models (LLMs) have shown significant potential as judges for Machine Translation (MT) quality assessment, providing both scores and fine-grained feedback. Although approaches such as GEMBA-MQM have shown state-of-the-art performance on reference-free evaluation, the predicted errors do not align well with those annotated by human, limiting their interpretability as feedback signals. To enhance the quality of error annotations predicted by LLM evaluators, we introduce a universal and training-free framework, **MQM-APE**, based on the idea of filtering out non-impactful errors by Automatically Post-Editing (APE) the original translation based on each error, leaving only those errors that contribute to quality improvement. Specifically, we prompt the LLM to act as 1) *evaluator* to provide error annotations, 2) *post-editor* to determine whether errors impact quality improvement and 3) *pairwise quality verifier* as the error filter. Experiments show that our approach consistently improves both the reliability and quality of error spans against GEMBA-MQM, across eight LLMs in both high- and low-resource languages. Orthogonal to trained approaches, MQM-APE complements translation-specific evaluators such as Tower, highlighting its broad applicability. Further analysis confirms the effectiveness of each module and offers valuable insights into evaluator design and LLMs selection.
+
+
+=== PROCESSING: acl-anthology/data/xml/2025.findings.xml ===
+
+=== HIT ===
+FILE: acl-anthology/data/xml/2025.findings.xml
+TITLE: M-IFEval: Multilingual Instruction-Following Evaluation
+Matched Keywords:
+  - LLM: LLM, large language model
+  - Judge: judge
+  - LR: multilingual
+ABSTRACT: Instruction following is a core capability of modern Large language models (LLMs), making evaluating this capability essential to understanding these models. The Instruction Following Evaluation (IFEval) benchmark from the literature does this using objective criteria, offering a measure of LLM performance without subjective AI or human judgement. However, it only includes English instructions, limiting its ability to assess LLMs in other languages.We propose the Multilingual Instruction Following Evaluation (M-IFEval) benchmark, expanding the evaluation to French, Japanese, and Spanish, with both general and language-specific instructions. Applying this benchmark to 8 state-of-the-art LLMs, we find that benchmark performance across languages and instruction types can vary widely, underscoring the importance of a multilingual benchmark for evaluating LLMs in a diverse cultural context.
+
+
+=== HIT ===
+FILE: acl-anthology/data/xml/2025.findings.xml
+TITLE: How Reliable is Multilingual LLM-as-a-Judge?
+Matched Keywords:
+  - LLM: LLM, large language model
+  - Judge: judge, LLM-as-a-judge
+  - LR: low-resource, multilingual
+ABSTRACT: LLM-as-a-Judge has emerged as a popular evaluation strategy, where advanced large language models assess generation results in alignment with human instructions. While these models serve as a promising alternative to human annotators, their reliability in multilingual evaluation remains uncertain. To bridge this gap, we conduct a comprehensive analysis of multilingual LLM-as-a-Judge. Specifically, we evaluate five models from different model families across five diverse tasks involving 25 languages. Our findings reveal that LLMs struggle to achieve consistent judgment results across languages, with an average Fleiss’ Kappa of approximately 0.3, and some models performing even worse. To investigate the cause of inconsistency, we analyze various influencing factors. We observe that consistency varies significantly across languages, with particularly poor performance in low-resource languages. Additionally, we find that neither training on multilingual data nor increasing model scale directly improves judgment consistency. These findings suggest that LLMs are not yet reliable for evaluating multilingual predictions. Our work provides valuable insights into the limitations of multilingual LLM-as-a-Judge, and sheds light on future research.
+
+
+=== HIT ===
+FILE: acl-anthology/data/xml/2025.findings.xml
+TITLE: Dialectal Toxicity Detection: Evaluating LLM-as-a-Judge Consistency Across Language Varieties
+Matched Keywords:
+  - LLM: LLM
+  - Judge: judge, evaluator, LLM-as-a-judge
+  - LR: low-resource, multilingual
+ABSTRACT: There has been little systematic study on how dialectal differences affect toxicity detection by modern LLMs. Furthermore, although using LLMs as evaluators (“LLM-as-a-judge”) is a growing research area, their sensitivity to dialectal nuances is still underexplored and requires more focused attention. In this paper, we address these gaps through a comprehensive toxicity evaluation of LLMs across diverse dialects. We create a multi-dialect dataset through synthetic transformations and human-assisted translations, covering 10 language clusters and 60 varieties. We then evaluate five LLMs on their ability to assess toxicity, measuring multilingual, dialectal, and LLM-human consistency. Our findings show that LLMs are sensitive to both dialectal shifts and low-resource multilingual variation, though the most persistent challenge remains aligning their predictions with human judgments.
+
+
+=== HIT ===
+FILE: acl-anthology/data/xml/2025.findings.xml
+TITLE: Unlocking Legal Knowledge: A Multilingual Dataset for Judicial Summarization in Switzerland
+Matched Keywords:
+  - LLM: LLM
+  - Judge: judge, LLM-as-a-judge
+  - LR: multilingual
+ABSTRACT: Legal research depends on headnotes: concise summaries that help lawyers quickly identify relevant cases. Yet, many court decisions lack them due to the high cost of manual annotation. To address this gap, we introduce the Swiss Landmark Decisions Summarization (SLDS) dataset containing 20K rulings from the Swiss Federal Supreme Court, each with headnotes in German, French, and Italian. SLDS has the potential to significantly improve access to legal information and transform legal research in Switzerland. We fine-tune open models (Qwen2.5, Llama 3.2, Phi-3.5) and compare them to larger general-purpose and reasoning-tuned LLMs, including GPT-4o, Claude 3.5 Sonnet, and the open-source DeepSeek R1. Using an LLM-as-a-Judge framework, we find that fine-tuned models perform well in terms of lexical similarity, while larger models generate more legally accurate and coherent summaries. Interestingly, reasoning-focused models show no consistent benefit, suggesting that factual precision is more important than deep reasoning in this task. We release SLDS under a CC BY 4.0 license to support future research in cross-lingual legal summarization.
+
+
+=== HIT ===
+FILE: acl-anthology/data/xml/2025.findings.xml
+TITLE: Hallucination Detection in Structured Query Generation via LLM Self-Debating
+Matched Keywords:
+  - LLM: LLM, large language model
+  - Judge: judge, LLM-as-a-judge
+  - LR: low-resource
+ABSTRACT: Hallucination remains a key challenge in applying large language models (LLMs) to structured query generation, especially for semi-private or domain-specific languages underrepresented in public training data. In this work, we focus on hallucination detection in these low-resource structured language scenarios, using Splunk Search Processing Language (SPL) as a representative case study. We start from analyzing real-world SPL generation to define hallucination in this context and introduce a comprehensive taxonomy. To enhance detection performance, we propose the Self-Debating framework, which prompts an LLM to generate contrastive explanations from opposing perspectives before rendering a final consistency judgment. We also construct a synthetic benchmark, SynSPL, to support systematic evaluation of hallucination detection in SPL generation. Experimental results show that Self-Debating consistently outperforms LLM-as-a-Judge baselines with zero-shot and chain-of-thought (CoT) prompts in SPL hallucination detection across different LLMs, yielding 5–10% relative gains in hallucination F1 scores on both real and synthetic datasets, and up to 260% improvement for LLaMA-3.1–8B. Besides hallucination detection on SPL, Self-Debating also achieves excellent performance on the FaithBench benchmark for summarization hallucination, demonstrating the strong generalization ability of Self-Debating, with OpenAI o1-mini achieving state-of-the-art performance. All these results consistently demonstrate the strong robustness and wide generalizability of Self-Debating.
+
+
+=== HIT ===
+FILE: acl-anthology/data/xml/2025.findings.xml
+TITLE: MUG-Eval: A Proxy Evaluation Framework for Multilingual Generation Capabilities in Any Language
+Matched Keywords:
+  - LLM: LLM, large language model
+  - Judge: judge
+  - LR: low-resource, multilingual
+ABSTRACT: Evaluating text generation capabilities of large language models (LLMs) is challenging, particularly for low-resource languages where methods for direct assessment are scarce. We propose MUG-Eval, a novel framework that evaluates LLMs’ multilingual generation capabilities by transforming existing benchmarks into conversational tasks and measuring the LLMs’ accuracies on those tasks. We specifically designed these conversational tasks to require effective communication in the target language. Then, we simply use task success rate as a proxy for successful conversation generation. Our approach offers two key advantages: it is independent of language-specific NLP tools or annotated datasets, which are limited for most languages, and it does not rely on LLMs-as-judges, whose evaluation quality degrades outside a few high-resource languages. We evaluate 8 LLMs across 30 languages spanning high, mid, and low-resource categories, and we find that MUG-Eval correlates strongly with established benchmarks (r > 0.75) while enabling standardized comparisons across languages and models. Our framework provides a robust and resource-efficient solution for evaluating multilingual generation that can be extended to thousands of languages.
+
+
+=== PROCESSING: acl-anthology/data/xml/2024.acl.xml ===
+
+=== HIT ===
+FILE: acl-anthology/data/xml/2024.acl.xml
+TITLE: MELA: Multilingual Evaluation of Linguistic Acceptability
+Matched Keywords:
+  - LLM: LLM
+  - Judge: judge
+  - LR: multilingual
+ABSTRACT: In this work, we present the largest benchmark to date on linguistic acceptability: Multilingual Evaluation of Linguistic Acceptability—MELA, with 46K samples covering 10 languages from a diverse set of language families. We establish LLM baselines on this benchmark, and investigate cross-lingual transfer in acceptability judgements with XLM-R. In pursuit of multilingual interpretability, we conduct probing experiments with fine-tuned XLM-R to explore the process of syntax capability acquisition. Our results show that GPT-4o exhibits a strong multilingual ability, outperforming fine-tuned XLM-R, while open-source multilingual models lag behind by a noticeable gap. Cross-lingual transfer experiments show that transfer in acceptability judgment is non-trivial: 500 Icelandic fine-tuning examples lead to 23 MCC performance in a completely unrelated language—Chinese. Results of our probing experiments indicate that training on MELA improves the performance of XLM-R on syntax-related tasks.
+
+
+=== HIT ===
+FILE: acl-anthology/data/xml/2024.acl.xml
+TITLE: JumpCoder: Go Beyond Autoregressive Coder via Online Modification
+Matched Keywords:
+  - LLM: LLM, large language model
+  - Judge: judge
+  - LR: multilingual
+ABSTRACT: While existing code large language models (code LLMs) exhibit impressive capabilities in code generation, their autoregressive sequential generation inherently lacks reversibility. This limitation hinders them from timely correcting previous missing statements during coding as humans do, often leading to error propagation and suboptimal performance. We introduce JumpCoder, a novel model-agnostic framework that enables human-like online modification and non-sequential generation to augment code LLMs. The key idea behind JumpCoder is to insert new code into the currently generated code when necessary during generation, which is achieved through an auxiliary infilling model that works in tandem with the code LLM. Since identifying the best infill position beforehand is intractable, we adopt an infill-first, judge-later strategy, which experiments with filling at the k most critical positions following the generation of each line, and uses an Abstract Syntax Tree (AST) parser alongside the Generation Model Scoring to effectively judge the validity of each potential infill. Extensive experiments using six state-of-the-art code LLMs across multiple and multilingual benchmarks consistently indicate significant improvements over all baselines. Our code is available in the uploaded attachment.
+
+
+=== PROCESSING: acl-anthology/data/xml/2024.emnlp.xml ===
+
+=== HIT ===
+FILE: acl-anthology/data/xml/2024.emnlp.xml
+TITLE: PARIKSHA: A Large-Scale Investigation of Human-LLM Evaluator Agreement on Multilingual and Multi-Cultural Data
+Matched Keywords:
+  - LLM: LLM, large language model
+  - Judge: evaluator, LLM-based evaluations
+  - LR: multilingual
+ABSTRACT: Evaluation of multilingual Large Language Models (LLMs) is challenging due to a variety of factors – the lack of benchmarks with sufficient linguistic diversity, contamination of popular benchmarks into LLM pre-training data and the lack of local, cultural nuances in translated benchmarks. In this work, we study human and LLM-based evaluation in a multilingual, multi-cultural setting. We evaluate 30 models across 10 Indic languages by conducting 90K human evaluations and 30K LLM-based evaluations and find that models such as GPT-4o and Llama-3 70B consistently perform best for most Indic languages. We build leaderboards for two evaluation settings - pairwise comparison and direct assessment and analyse the agreement between humans and LLMs. We find that humans and LLMs agree fairly well in the pairwise setting but the agreement drops for direct assessment evaluation especially for languages such as Bengali and Odia. We also check for various biases in human and LLM-based evaluation and find evidence of self-bias in the GPT-based evaluator. Our work presents a significant step towards scaling up multilingual evaluation of LLMs.
+
+
+=== HIT ===
+FILE: acl-anthology/data/xml/2024.emnlp.xml
+TITLE: SciEx: Benchmarking Large Language Models on Scientific Exams with Human Expert Grading and Automatic Grading
+Matched Keywords:
+  - LLM: LLM, large language model
+  - Judge: judge, LLM-as-a-judge
+  - LR: multilingual
+ABSTRACT: With the rapid development of Large Language Models (LLMs), it is crucial to have benchmarks which can evaluate the ability of LLMs on different domains. One common use of LLMs is performing tasks on scientific topics, such as writing algorithms, querying databases or giving mathematical proofs. Inspired by the way university students are evaluated on such tasks, in this paper, we propose SciEx - a benchmark consisting of university computer science exam questions, to evaluate LLMs’ ability on solving scientific tasks. SciEx is (1) multilingual, containing both English and German exams, and (2) multi-modal, containing questions that involve images, and (3) contains various types of freeform questions with different difficulty levels, due to the nature of university exams. We evaluate the performance of various state-of-the-art LLMs on our new benchmark. Since SciEx questions are freeform, it is not straightforward to evaluate LLM performance. Therefore, we provide human expert grading of the LLM outputs on SciEx. We show that the free-form exams in SciEx remain challenging for the current LLMs, where the best LLM only achieves 59.4% exam grade on average. We also provide detailed comparisons between LLM performance and student performance on SciEx. To enable future evaluation of new LLMs, we propose using LLM-as-a-judge to grade the LLM answers on SciEx. Our experiments show that, although they do not perform perfectly on solving the exams, LLMs are decent as graders, achieving 0.948 Pearson correlation with expert grading.
+
+
+=== HIT ===
+FILE: acl-anthology/data/xml/2024.emnlp.xml
+TITLE: Re-Evaluating Evaluation for Multilingual Summarization
+Matched Keywords:
+  - LLM: LLM
+  - Judge: evaluator
+  - LR: multilingual
+ABSTRACT: Automatic evaluation approaches (ROUGE, BERTScore, LLM-based evaluators) have been widely used to evaluate summarization tasks. Despite the complexities of script differences and tokenization, these approaches have been indiscriminately applied to summarization across multiple languages. While previous works have argued that these approaches correlate strongly with human ratings in English, it remains unclear whether the conclusion holds for other languages. To answer this question, we construct a small-scale pilot dataset containing article-summary pairs and human ratings in English, Chinese and Indonesian. To measure the strength of summaries, our ratings are measured as head-to-head comparisons with resulting Elo scores across four dimensions. Our analysis reveals that standard metrics are unreliable measures of quality, and that these problems are exacerbated in Chinese and Indonesian. We advocate for more nuanced and careful considerations in designing a robust evaluation framework for multiple languages.
+
+
+=== HIT ===
+FILE: acl-anthology/data/xml/2024.emnlp.xml
+TITLE: WalledEval: A Comprehensive Safety Evaluation Toolkit for Large Language Models
+Matched Keywords:
+  - LLM: LLM, large language model
+  - Judge: judge
+  - LR: multilingual
+ABSTRACT: WalledEval is a comprehensive AI safety testing toolkit designed to evaluate large language models (LLMs). It accommodates a diverse range of models, including both open-weight and API-based ones, and features over 35 safety benchmarks covering areas such as multilingual safety, exaggerated safety, and prompt injections. The framework supports both LLM and judge benchmarking, and incorporates custom mutators to test safety against various text-style mutations such as future tense and paraphrasing. Additionally, WalledEval introduces WalledGuard, a new, small and performant content moderation tool, and SGXSTest, a benchmark for assessing exaggerated safety in cultural contexts. We make WalledEval publicly available at https://github.com/walledai/walledeval with a demonstration video at https://youtu.be/50Zy97kj1MA.
+
+
+=== PROCESSING: acl-anthology/data/xml/2024.coling.xml ===
+
+=== PROCESSING: acl-anthology/data/xml/2024.findings.xml ===
+
+=== HIT ===
+FILE: acl-anthology/data/xml/2024.findings.xml
+TITLE: Rethinking STS and NLI in Large Language Models
+Matched Keywords:
+  - LLM: LLM, large language model
+  - Judge: judge
+  - LR: low-resource
+ABSTRACT: Recent years, have seen the rise of large language models (LLMs), where practitioners use task-specific prompts; this was shown to be effective for a variety of tasks. However, when applied to semantic textual similarity (STS) and natural language inference (NLI), the effectiveness of LLMs turns out to be limited by low-resource domain accuracy, model overconfidence, and difficulty to capture the disagreements between human judgements. With this in mind, here we try to rethink STS and NLI in the era of LLMs. We first evaluate the performance of STS and NLI in the clinical/biomedical domain, and then we assess LLMs’ predictive confidence and their capability of capturing collective human opinions. We find that these old problems are still to be properly addressed in the era of LLMs.
+
+
+=== HIT ===
+FILE: acl-anthology/data/xml/2024.findings.xml
+TITLE: Are Large Language Model-based Evaluators the Solution to Scaling Up Multilingual Evaluation?
+Matched Keywords:
+  - LLM: LLM, large language model
+  - Judge: evaluator
+  - LR: low-resource, multilingual
+ABSTRACT: Large Language Models (LLMs) excel in various Natural Language Processing (NLP) tasks, yet their evaluation, particularly in languages beyond the top 20, remains inadequate due to existing benchmarks and metrics limitations. Employing LLMs as evaluators to rank or score other models’ outputs emerges as a viable solution, addressing the constraints tied to human annotators and established benchmarks. In this study, we explore the potential of LLM-based evaluators in enhancing multilingual evaluation by calibrating them against 20K human judgments across three text-generation tasks, five metrics, and eight languages. Our analysis reveals a bias in LLM-based evaluators towards higher scores, underscoring the necessity of calibration with native speaker judgments, especially in low-resource and non-Latin script languages, to ensure accurate evaluation of LLM performance across diverse languages.
+
+
+=== HIT ===
+FILE: acl-anthology/data/xml/2024.findings.xml
+TITLE: METAL: Towards Multilingual Meta-Evaluation
+Matched Keywords:
+  - LLM: LLM, large language model
+  - Judge: judge, evaluator
+  - LR: multilingual
+ABSTRACT: With the rising human-like precision of Large Language Models (LLMs) in numerous tasks, their utilization in a variety of real-world applications is becoming more prevalent. Several studies have shown that LLMs excel on many standard NLP benchmarks. However, it is challenging to evaluate LLMs due to test dataset contamination and the limitations of traditional metrics. Since human evaluations are difficult to collect, there is a growing interest in the community to use LLMs themselves as reference-free evaluators for subjective metrics. However, past work has shown that LLM-based evaluators can exhibit bias and have poor alignment with human judgments. In this study, we propose a framework for an end-to-end assessment of LLMs as evaluators in multilingual scenarios. We create a carefully curated dataset, covering 10 languages containing native speaker judgments for the task of summarization. This dataset is created specifically to evaluate LLM-based evaluators, which we refer to as meta-evaluation (METAL). We compare the performance of LLM-based evaluators created using GPT-3.5-Turbo, GPT-4, and PaLM2. Our results indicate that LLM-based evaluators based on GPT-4 perform the best across languages, while GPT-3.5-Turbo performs poorly. Additionally, we perform an analysis of the reasoning provided by LLM-based evaluators and find that it often does not match the reasoning provided by human judges.
+
+
+=== HIT ===
+FILE: acl-anthology/data/xml/2024.findings.xml
+TITLE: “Knowing When You Don’t Know”: A Multilingual Relevance Assessment Dataset for Robust Retrieval-Augmented Generation
+Matched Keywords:
+  - LLM: LLM, large language model
+  - Judge: judge
+  - LR: multilingual
+ABSTRACT: Retrieval-Augmented Generation (RAG) grounds Large Language Model (LLM) output by leveraging external knowledge sources to reduce factual hallucinations. However, prior work lacks a comprehensive evaluation of different language families, making it challenging to evaluate LLM robustness against errors in external retrieved knowledge. To overcome this, we establish **NoMIRACL**, a human-annotated dataset for evaluating LLM robustness in RAG across 18 typologically diverse languages. NoMIRACL includes both a non-relevant and a relevant subset. Queries in the non-relevant subset contain passages judged as non-relevant, whereas queries in the relevant subset include at least a single judged relevant passage. We measure relevance assessment using: (i) *hallucination rate*, measuring model tendency to hallucinate when the answer is not present in passages in the non-relevant subset, and (ii) *error rate*, measuring model inaccuracy to recognize relevant passages in the relevant subset. In our work, we observe that most models struggle to balance the two capacities. Models such as LLAMA-2 and Orca-2 achieve over 88% hallucination rate on the non-relevant subset. Mistral and LLAMA-3 hallucinate less but can achieve up to a 74.9% error rate on the relevant subset. Overall, GPT-4 is observed to provide the best tradeoff on both subsets, highlighting future work necessary to improve LLM robustness. NoMIRACL dataset and evaluation code are available at: https://github.com/project-miracl/nomiracl.
+
+
+=== HIT ===
+FILE: acl-anthology/data/xml/2024.findings.xml
+TITLE: How Does Quantization Affect Multilingual LLMs?
+Matched Keywords:
+  - LLM: LLM, large language model
+  - Judge: judge, evaluator, LLM-as-a-judge
+  - LR: multilingual
+ABSTRACT: Quantization techniques are widely used to improve inference speed and deployment of large language models. While a wide body of work examines the impact of quantization on LLMs in English, none have evaluated across languages. We conduct a thorough analysis of quantized multilingual LLMs, focusing on performance across languages and at varying scales. We use automatic benchmarks, LLM-as-a-Judge, and human evaluation, finding that (1) harmful effects of quantization are apparent in human evaluation, which automatic metrics severely underestimate: a 1.7% average drop in Japanese across automatic tasks corresponds to a 16.0% drop reported by human evaluators on realistic prompts; (2) languages are disparately affected by quantization, with non-Latin script languages impacted worst; and (3) challenging tasks like mathematical reasoning degrade fastest. As the ability to serve low-compute models is critical for wide global adoption of NLP technologies, our results urge consideration of multilingual performance as a key evaluation criterion for efficient models.
+
+
+---- SUMMARY ----
+Total papers: 13074
+Matched papers: 23
+Per-file hits:
+
+---- SUMMARY ----
+Total papers: 13074
+Matched papers: 23
+Per-file hits:
+  acl-anthology/data/xml/2025.acl.xml: 3/1966
+  acl-anthology/data/xml/2025.emnlp.xml: 2/2085
+  acl-anthology/data/xml/2025.coling.xml: 1/848
+  acl-anthology/data/xml/2025.findings.xml: 6/3266
+  acl-anthology/data/xml/2024.acl.xml: 2/1030
+  acl-anthology/data/xml/2024.emnlp.xml: 4/1447
+  acl-anthology/data/xml/2024.coling.xml: 0/0
+  acl-anthology/data/xml/2024.findings.xml: 5/2432
