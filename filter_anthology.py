@@ -1,26 +1,38 @@
 from bs4 import BeautifulSoup
 import glob
+import csv
+
+# ============================================================
+# CSV output setup
+# ============================================================
+
+csv_path = "keyword_hits.csv"
+f_csv = open(csv_path, "w", encoding="utf-8", newline="")
+csv_writer = csv.writer(f_csv)
+
+# Write header row
+csv_writer.writerow(["FILE", "TITLE", "Matched Keywords", "ABSTRACT"])
+
 
 #### ============================================================
 #### Input XML Files 
 #### ============================================================
 
 # Option 1: Loop over *all* XML files in a directory
-# infiles = glob.glob("acl-anthology/data/xml/*.xml")
+infiles = glob.glob("acl-anthology/data/xml/*.xml")
 
 # Option 2: Provide an explicit list of XML files
 
-infiles = [
-    "acl-anthology/data/xml/2025.acl.xml",
-    "acl-anthology/data/xml/2025.emnlp.xml",
-    "acl-anthology/data/xml/2025.coling.xml",
-    "acl-anthology/data/xml/2025.findings.xml",
-    "acl-anthology/data/xml/2024.acl.xml",
-    "acl-anthology/data/xml/2024.emnlp.xml",
-    "acl-anthology/data/xml/2024.coling.xml",
-    "acl-anthology/data/xml/2024.findings.xml"
-    
-]
+# infiles = [
+#     "acl-anthology/data/xml/2025.acl.xml",
+#     "acl-anthology/data/xml/2025.emnlp.xml",
+#     "acl-anthology/data/xml/2025.coling.xml",
+#     "acl-anthology/data/xml/2025.findings.xml",
+#     "acl-anthology/data/xml/2024.acl.xml",
+#     "acl-anthology/data/xml/2024.emnlp.xml",
+#     "acl-anthology/data/xml/2024.coling.xml",
+#     "acl-anthology/data/xml/2024.findings.xml"    
+# ]
 
 #### ============================================================
 #### Keyword Configuration
@@ -30,11 +42,13 @@ infiles = [
 #   (any LLM keyword) AND (any Judge keyword) AND (any LR keyword)
 
 llm_any = ["LLM", "large language model"]   # OR
-judge_any = ["judge", "evaluator", "LLM-based evaluations", 
-            "LLM-as-a-judge", "LLM-based assessment", "automatic evaluators"]  # OR
-lr_any = ["low-resource", "underresourced", "underresearched", "low resource", "multilingual"] # OR
+judge_any = ["judge", "evaluator", "LLM-based evaluation", 
+            "LLM-as-a-judge", "LLM-based assessment", "automatic evaluator"]  # OR
+lr_any = ["low-resource", "underresourced", "underresearched", 
+          "under-resourced", "under-researched", 
+          "low resource", "multilingual"] # OR
 # Alternative: disable low-resource filtering
-# lr_any = [" "]
+#lr_any = [" "]
 
 
 #### ============================================================
@@ -129,6 +143,15 @@ for infile in infiles:
             global_hits += 1
             file_hits += 1
 
+            # Write to CSV
+            csv_writer.writerow([
+                infile,
+                title,
+                "; ".join([f"{group}: {', '.join(kws)}" for group, kws in match_details.items()]),
+                abstract
+            ])
+            ...
+
             print("\n=== HIT ===")
             print("FILE:", infile)
             print("TITLE:", title)
@@ -174,3 +197,4 @@ for fname in infiles:
     fout.write(f"  {fname}: {hits_here}/{total_here}\n")
 
 fout.close()
+f_csv.close()
